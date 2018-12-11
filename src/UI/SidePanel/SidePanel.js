@@ -3,6 +3,7 @@ import { Menu } from 'semantic-ui-react';
 import Channels from './Channels/Channels';
 import UserPanel from './UserPanel/UserPanel';
 import DirectMessages from './DirectMessages/DirectMessages';
+import Starred from './Starred/Starred';
 class SidePanel extends Component {
     constructor(props) {
         super(props);
@@ -22,6 +23,7 @@ class SidePanel extends Component {
                     fontSize: '1.2rem'
                 }}>
                 <UserPanel currentUser={currentUser} />
+                <Starred currentUser={currentUser}/>
                 <Channels currentUser={currentUser} />
                 <DirectMessages currentUser={currentUser} />
             </Menu>
